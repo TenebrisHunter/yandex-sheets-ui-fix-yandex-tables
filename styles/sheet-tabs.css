@@ -11,4 +11,6 @@
     padding: 6px 14px !important;
     line-height: 1.4 !important;
     min-height: 30px !important;
+    display: flex !important;
+    align-items: center !important;
 }
