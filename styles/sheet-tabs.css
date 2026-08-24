@@ -14,3 +14,12 @@
     display: flex !important;
     align-items: center !important;
 }
+
+/* Текст внутри вкладки (название листа) */
+#statusbar_bottom > li.list-item > span {
+    font-size: 15px !important;
+    padding: 2px 4px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+}
