@@ -31,3 +31,9 @@
     background-size: 16px 16px !important;
     flex-shrink: 0 !important;
 }
+
+/* Активная вкладка — чтобы выделение не съезжало */
+#statusbar_bottom > li.list-item.active,
+#statusbar_bottom > li.list-item.selected {
+    padding: 6px 14px !important;
+}
