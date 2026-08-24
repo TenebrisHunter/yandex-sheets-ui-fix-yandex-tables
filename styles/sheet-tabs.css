@@ -23,3 +23,11 @@
     align-items: center !important;
     gap: 6px !important;
 }
+
+/* Иконка листа внутри вкладки — чуть крупнее */
+#statusbar_bottom > li.list-item .toolbar__icon.btn-sheet-view {
+    width: 16px !important;
+    height: 16px !important;
+    background-size: 16px 16px !important;
+    flex-shrink: 0 !important;
+}
