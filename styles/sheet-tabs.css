@@ -30,3 +30,12 @@
     align-items: center !important;
     white-space: nowrap !important;
 }
+
+/* Иконка листа */
+#statusbar_bottom > li.list-item .toolbar__icon.btn-sheet-view {
+    width: 14px !important;
+    height: 14px !important;
+    background-size: 14px 14px !important;
+    margin-right: 6px !important;
+    flex-shrink: 0 !important;
+}
