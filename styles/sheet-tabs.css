@@ -39,3 +39,9 @@
     margin-right: 6px !important;
     flex-shrink: 0 !important;
 }
+
+/* Активная вкладка — жирнее и заметнее */
+#statusbar_bottom > li.list-item.active,
+#statusbar_bottom > li.list-item.selected {
+    font-weight: 600 !important;
+}
