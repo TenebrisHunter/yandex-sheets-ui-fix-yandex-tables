@@ -8,3 +8,8 @@
     display: flex !important;
     align-items: stretch !important;
 }
+
+/* Каждая вкладка листа */
+#statusbar_bottom > li.list-item {
+    font-size: 13px !important;
+}
