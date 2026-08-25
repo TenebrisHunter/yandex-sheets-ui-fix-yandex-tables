@@ -20,3 +20,13 @@
     align-items: center !important;
     box-sizing: border-box !important;
 }
+
+/* Текст внутри вкладки */
+#statusbar_bottom > li.list-item > span {
+    font-size: 13px !important;
+    line-height: 1 !important;
+    padding: 0 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    white-space: nowrap !important;
+}
