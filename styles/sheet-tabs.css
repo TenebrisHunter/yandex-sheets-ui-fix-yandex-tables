@@ -11,13 +11,13 @@
 #statusbar_bottom > li.list-item {
     font-size: 14px !important;
     line-height: 1 !important;
-    padding: 0 14px !important;
+    padding: 0 16px !important;
     height: 36px !important;
     min-height: 36px !important;
     display: flex !important;
     align-items: center !important;
     box-sizing: border-box !important;
-    margin-right: 2px !important;
+    margin-right: 0 !important;
 }
 
 #statusbar_bottom > li.list-item > span {
