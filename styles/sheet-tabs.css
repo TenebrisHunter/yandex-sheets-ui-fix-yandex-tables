@@ -17,6 +17,7 @@
     display: flex !important;
     align-items: center !important;
     box-sizing: border-box !important;
+    margin-right: 2px !important;
 }
 
 #statusbar_bottom > li.list-item > span {
