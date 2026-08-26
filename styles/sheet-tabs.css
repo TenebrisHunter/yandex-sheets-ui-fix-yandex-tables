@@ -1,6 +1,5 @@
-﻿/* ===== Нижняя панель с листами — как в Google Sheets ===== */
+﻿/* ===== Нижняя панель с листами — эксперимент ===== */
 
-/* Контейнер вкладок */
 #statusbar_bottom.nav-tabs.bottom {
     height: 32px !important;
     min-height: 32px !important;
@@ -9,9 +8,8 @@
     align-items: stretch !important;
 }
 
-/* Каждая вкладка листа */
 #statusbar_bottom > li.list-item {
-    font-size: 13px !important;
+    font-size: 14px !important;
     line-height: 1 !important;
     padding: 0 12px !important;
     height: 32px !important;
@@ -21,9 +19,8 @@
     box-sizing: border-box !important;
 }
 
-/* Текст внутри вкладки */
 #statusbar_bottom > li.list-item > span {
-    font-size: 13px !important;
+    font-size: 14px !important;
     line-height: 1 !important;
     padding: 0 !important;
     display: inline-flex !important;
@@ -31,7 +28,6 @@
     white-space: nowrap !important;
 }
 
-/* Иконка листа */
 #statusbar_bottom > li.list-item .toolbar__icon.btn-sheet-view {
     width: 14px !important;
     height: 14px !important;
@@ -40,7 +36,6 @@
     flex-shrink: 0 !important;
 }
 
-/* Активная вкладка — жирнее и заметнее */
 #statusbar_bottom > li.list-item.active,
 #statusbar_bottom > li.list-item.selected {
     font-weight: 600 !important;
