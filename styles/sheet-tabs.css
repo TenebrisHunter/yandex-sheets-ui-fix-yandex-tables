@@ -30,9 +30,9 @@
 }
 
 #statusbar_bottom > li.list-item .toolbar__icon.btn-sheet-view {
-    width: 14px !important;
-    height: 14px !important;
-    background-size: 14px 14px !important;
+    width: 16px !important;
+    height: 16px !important;
+    background-size: 16px 16px !important;
     margin-right: 6px !important;
     flex-shrink: 0 !important;
 }
