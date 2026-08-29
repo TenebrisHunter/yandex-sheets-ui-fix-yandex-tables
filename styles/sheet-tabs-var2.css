@@ -17,5 +17,13 @@
     display: flex !important;
     align-items: center !important;
     box-sizing: border-box !important;
-    margin-right: 2px !important; /* лёгкий зазор между вкладками */
+    margin-right: 4px !important; /* лёгкий зазор между вкладками */
+}
+
+/* Диагностика: убираем все отступы у span внутри вкладок */
+#statusbar_bottom > li.list-item > span {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+    outline: 1px solid red !important; /* временно, чтобы видеть границы */
 }
