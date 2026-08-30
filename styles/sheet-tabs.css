@@ -1,18 +1,22 @@
 ﻿/* ===== Нижняя панель с листами — как в Google Sheets ===== */
 
-/* Контейнер вкладок */
+/* Контейнер вкладок
+ * NOTE: проверяем, нет ли gap у самого ul — если есть, он тоже
+ * добавляет зазор между li.
+ */
 #statusbar_bottom.nav-tabs.bottom {
     height: 36px !important;
     min-height: 36px !important;
     max-height: 36px !important;
     display: flex !important;
     align-items: stretch !important;
+    gap: 0 !important;
+    column-gap: 0 !important;
 }
 
 /* Каждая вкладка листа
- * NOTE: margin обнулён — выясняем, откуда шёл лишний зазор.
- * В DevTools Computed видно, что оранжевый (margin) складывался
- * с нашим margin-right: 2px, отсюда двойной разрыв.
+ * NOTE: margin полностью обнулён. Зазор теперь задаётся только
+ * через padding — так он не складывается с чужими margin.
  */
 #statusbar_bottom > li.list-item {
     font-size: 14px !important;
@@ -26,11 +30,15 @@
     margin: 0 !important;
 }
 
-/* Текст внутри вкладки */
+/* Текст внутри вкладки
+ * NOTE: padding у span тоже обнулён — иначе он добавлялся бы
+ * к padding у li и зазор снова рос.
+ */
 #statusbar_bottom > li.list-item > span {
     font-size: 14px !important;
     line-height: 1 !important;
     padding: 0 !important;
+    margin: 0 !important;
     display: inline-flex !important;
     align-items: center !important;
     white-space: nowrap !important;
