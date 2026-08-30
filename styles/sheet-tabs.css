@@ -1,9 +1,14 @@
-﻿/* ===== Нижняя панель с листами — как в Google Sheets ===== */
-
-/* Контейнер вкладок
- * NOTE: проверяем, нет ли gap у самого ul — если есть, он тоже
- * добавляет зазор между li.
+﻿/* ===== Нижняя панель с листами — как в Google Sheets =====
+ *
+ * История правок:
+ * - margin у li обнулён: в DevTools Computed было видно, что
+ *   оранжевый (margin) складывался с нашим margin-right: 2px,
+ *   отсюда двойной зазор между вкладками.
+ * - gap у ul тоже обнулён на всякий случай.
+ * - padding у span обнулён, чтобы не суммировался с padding у li.
+ * - Зазор между вкладками теперь задаётся только через padding.
  */
+
 #statusbar_bottom.nav-tabs.bottom {
     height: 36px !important;
     min-height: 36px !important;
@@ -14,10 +19,6 @@
     column-gap: 0 !important;
 }
 
-/* Каждая вкладка листа
- * NOTE: margin полностью обнулён. Зазор теперь задаётся только
- * через padding — так он не складывается с чужими margin.
- */
 #statusbar_bottom > li.list-item {
     font-size: 14px !important;
     line-height: 1 !important;
@@ -30,10 +31,6 @@
     margin: 0 !important;
 }
 
-/* Текст внутри вкладки
- * NOTE: padding у span тоже обнулён — иначе он добавлялся бы
- * к padding у li и зазор снова рос.
- */
 #statusbar_bottom > li.list-item > span {
     font-size: 14px !important;
     line-height: 1 !important;
@@ -44,7 +41,6 @@
     white-space: nowrap !important;
 }
 
-/* Иконка листа */
 #statusbar_bottom > li.list-item .toolbar__icon.btn-sheet-view {
     width: 16px !important;
     height: 16px !important;
@@ -53,7 +49,6 @@
     flex-shrink: 0 !important;
 }
 
-/* Активная вкладка — жирнее и заметнее */
 #statusbar_bottom > li.list-item.active,
 #statusbar_bottom > li.list-item.selected {
     font-weight: 600 !important;
