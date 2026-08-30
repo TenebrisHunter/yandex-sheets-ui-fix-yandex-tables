@@ -1,26 +1,13 @@
-﻿/* ===== Нижняя панель с листами — вариант 3 (финальный) =====
- *
- * История правок:
- * - margin у li обнулён: в DevTools Computed было видно, что
- *   оранжевый (margin) складывался с нашим margin-right,
- *   отсюда двойной зазор между вкладками.
- * - gap у ul обнулён на всякий случай.
- * - padding у span обнулён, чтобы не суммировался с padding у li.
- * - Зазор между вкладками теперь задаётся только через padding.
- */
-
-/* Контейнер вкладок */
+﻿/* Контейнер */
 #statusbar_bottom.nav-tabs.bottom {
     height: 36px !important;
     min-height: 36px !important;
     max-height: 36px !important;
     display: flex !important;
     align-items: stretch !important;
-    gap: 0 !important;
-    column-gap: 0 !important;
 }
 
-/* Каждая вкладка листа */
+/* Вкладка */
 #statusbar_bottom > li.list-item {
     font-size: 14px !important;
     line-height: 1 !important;
@@ -30,31 +17,25 @@
     display: flex !important;
     align-items: center !important;
     box-sizing: border-box !important;
-    margin: 0 !important;
+    margin-right: 4px !important; /* лёгкий зазор между вкладками */
 }
 
-/* Текст внутри вкладки */
+/* Диагностика: убираем все отступы у span внутри вкладок */
 #statusbar_bottom > li.list-item > span {
-    font-size: 14px !important;
-    line-height: 1 !important;
-    padding: 0 !important;
     margin: 0 !important;
-    display: inline-flex !important;
-    align-items: center !important;
-    white-space: nowrap !important;
+    padding: 0 !important;
+    border: 0 !important;
+    outline: 1px solid red !important; /* временно, чтобы видеть границы */
 }
 
-/* Иконка листа */
-#statusbar_bottom > li.list-item .toolbar__icon.btn-sheet-view {
-    width: 16px !important;
-    height: 16px !important;
-    background-size: 16px 16px !important;
-    margin-right: 6px !important;
-    flex-shrink: 0 !important;
+/* Диагностика: обнуляем всё у li */
+#statusbar_bottom > li.list-item {
+    margin: 0 !important;
+    padding: 0 14px !important;
 }
 
-/* Активная вкладка — жирнее и заметнее */
-#statusbar_bottom > li.list-item.active,
-#statusbar_bottom > li.list-item.selected {
-    font-weight: 600 !important;
+/* Диагностика: обнуляем gap у ul */
+#statusbar_bottom.nav-tabs.bottom {
+    gap: 0 !important;
+    column-gap: 0 !important;
 }
