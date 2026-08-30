@@ -9,16 +9,21 @@
     align-items: stretch !important;
 }
 
-/* Каждая вкладка листа */
+/* Каждая вкладка листа
+ * NOTE: margin обнулён — выясняем, откуда шёл лишний зазор.
+ * В DevTools Computed видно, что оранжевый (margin) складывался
+ * с нашим margin-right: 2px, отсюда двойной разрыв.
+ */
 #statusbar_bottom > li.list-item {
     font-size: 14px !important;
     line-height: 1 !important;
-    padding: 0 16px !important;
+    padding: 0 14px !important;
     height: 36px !important;
     min-height: 36px !important;
     display: flex !important;
     align-items: center !important;
     box-sizing: border-box !important;
+    margin: 0 !important;
 }
 
 /* Текст внутри вкладки */
