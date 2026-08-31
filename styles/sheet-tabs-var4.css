@@ -11,33 +11,11 @@
 #statusbar_bottom > li.list-item {
     font-size: 14px !important;
     line-height: 1 !important;
-    padding: 0 14px !important;
+    padding: 0 1px !important;
     height: 36px !important;
     min-height: 36px !important;
     display: flex !important;
     align-items: center !important;
     box-sizing: border-box !important;
     margin-right: 4px !important; /* лёгкий зазор между вкладками */
-}
-
-/* Диагностика: убираем все отступы у span внутри вкладок */
-#statusbar_bottom > li.list-item > span {
-    margin: 0 !important;
-    padding: 0 !important;
-    border: 0 !important;
-    outline: 1px solid red !important; /* временно, чтобы видеть границы */
-}
-/*нужно будет потом вернуть, чтоб текст не слипался визуально
-
-
-/* Диагностика: обнуляем всё у li */
-#statusbar_bottom > li.list-item {
-    margin: 0 !important;
-    padding: 0 14px !important;
-}
-
-/* Диагностика: обнуляем gap у ul */
-#statusbar_bottom.nav-tabs.bottom {
-    gap: 0 !important;
-    column-gap: 0 !important;
 }
