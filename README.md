@@ -69,15 +69,15 @@ highlighted with a green background.
 
 ---
 
-## Структура / Structure
-yandex-sheets-ui-fix/
-├── README.md
-├── DESCRIPTION.txt
-├── INSTALL_RU.txt
-├── INSTALL_EN.txt
-├── LICENSE
-└── styles/
-    └── sheet-tabs-var4.css
+## Структура / Structure  
+yandex-sheets-ui-fix/  
+├── README.md  
+├── DESCRIPTION.txt  
+├── INSTALL_RU.txt  
+├── INSTALL_EN.txt  
+├── LICENSE  
+└── styles/  
+    └── sheet-tabs-var4.css  
 
 
 ---
