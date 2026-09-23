@@ -1,9 +1,8 @@
-﻿Yandex Sheets UI Fix — a small CSS style that makes the sheet tabs
-bar at the bottom of Yandex Sheets (Яндекс Таблицы) larger,
-more readable, and visually closer to Google Sheets.
+﻿CSS style that makes the sheet tabs
+bar at the bottom of Yandex Sheets larger,
 Includes a green highlight for the active tab.
 
-Небольшой CSS-стиль, который делает нижнюю панель с вкладками
+CSS-стиль, который делает нижнюю панель с вкладками
 листов в Яндекс Таблицах крупнее и удобнее для чтения.
-Размеры близки к Google Sheets. Активная вкладка подсвечивается
+Активная вкладка подсвечивается
 зелёным.
