@@ -1,0 +1,52 @@
+﻿================================================================
+  Yandex Sheets UI Fix — Installation Guide (EN)
+================================================================
+
+WHAT IS IT?
+-----------
+A small CSS style that makes the sheet tabs bar at the bottom
+of Yandex Sheets (Яндекс Таблицы) larger and easier to read.
+Sizes are close to Google Sheets, but slightly more comfortable.
+
+REQUIREMENTS
+------------
+1. Browser: Chrome, Yandex Browser, Edge, or any Chromium-based.
+2. Stylus extension (free):
+   - Chrome Web Store:
+     https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne
+   - For Yandex Browser — the same extension from Chrome Web Store
+     (Yandex Browser supports Chrome extensions).
+
+INSTALLATION
+------------
+1. Install the Stylus extension.
+2. Open Yandex Sheets in your browser.
+3. Click the Stylus icon in the browser toolbar.
+4. Choose "Create new style".
+5. In the "Applies to" field, select "ALL" (or leave the URL
+   prefix empty so the style applies to every site).
+   IMPORTANT: the author could not find the exact URL used by
+   Yandex Sheets, so "ALL" is recommended.
+   This is safe: the style uses very specific selectors
+   (#statusbar_bottom ...) that exist only in Yandex Sheets.
+6. Paste the CSS code from styles/sheet-tabs.css
+   (or styles/sheet-tabs-var4.css).
+7. Save (Ctrl+S).
+8. Reload the sheet page — the tabs should become larger,
+   and the active tab should be highlighted in green.
+
+CUSTOMIZATION
+-------------
+All parameters are editable in the CSS. The main ones:
+- height:       tab height (default 36px).
+- font-size:    text size (14px).
+- padding:      inner padding (0 1px).
+- margin-right: gap between tabs (4px).
+- background-color: active tab highlight color
+                (#79d69361 — green with transparency).
+
+If something does not work, make sure the style is enabled
+(the Stylus icon should be active) and that you are on a
+Yandex Sheets page.
+
+================================================================
