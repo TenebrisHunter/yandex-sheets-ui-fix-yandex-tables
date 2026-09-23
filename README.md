@@ -70,4 +70,34 @@ highlighted with a green background.
 ---
 
 ## Структура / Structure
+yandex-sheets-ui-fix/
+├── README.md
+├── DESCRIPTION.txt
+├── INSTALL_RU.txt
+├── INSTALL_EN.txt
+├── LICENSE
+└── styles/
+    └── sheet-tabs-var4.css
 
+
+---
+
+## Лицензия / License
+
+MIT — см. файл `LICENSE`.
+'@ | Out-File -Encoding utf8 README.md
+
+
+## Авторы / Authors
+
+**RU:**  
+Ключенко М.А.  
+Омск, ОмГТУ, БИТ-211  
+АНО ЦО ДО «Махаон»  
+(сделал данную программу, потому что масштабирование Яндекс Таблиц неполноценно)
+
+**EN:**  
+Klyuchenko M.A.  
+Omsk, OmSTU, BIT-211  
+ANO TSO DO "Makhaon"  
+(Made this program because the scaling in Yandex Sheets is incomplete)
