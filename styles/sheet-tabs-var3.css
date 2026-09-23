@@ -27,6 +27,8 @@
     border: 0 !important;
     outline: 1px solid red !important; /* временно, чтобы видеть границы */
 }
+/*нужно будет потом вернуть, чтоб текст не слипался визуально
+
 
 /* Диагностика: обнуляем всё у li */
 #statusbar_bottom > li.list-item {
