@@ -1,0 +1,55 @@
+﻿/* ===================================================================
+ * СКРОЛЛБАРЫ (горизонтальный и вертикальный)
+ * ===================================================================
+ * Увеличиваем толщину полос прокрутки и меняем их цвет.
+ *
+ * Настройка:
+ * - height / width: толщина полосы (по умолчанию 14px).
+ * - background:     цвет полосы в обычном состоянии.
+ * - :hover:         цвет полосы при наведении курсора.
+ *
+ * ВАЖНО: у контейнера скроллбара цвет задан инлайн-стилем
+ * (style="background-color: ..."), поэтому перебиваем через
+ * !important. Без него инлайн-стиль победит.
+ * ------------------------------------------------------------------- */
+
+
+/* --- Горизонтальный скроллбар (нижний) --- */
+
+#ws-h-scrollbar {
+    height: 20px !important;
+    background-color: #c0c0c0 !important;
+}
+
+#ws-h-scrollbar:hover {
+    background-color: #808080 !important;
+}
+
+#ws-h-scrollbar canvas {
+    height: 100% !important;
+}
+
+
+/* --- Вертикальный скроллбар (правый) --- */
+
+#ws-v-scrollbar {
+    width: 20px !important;
+    background-color: #c0c0c0 !important;
+}
+
+#ws-v-scrollbar:hover {
+    background-color: #808080 !important;
+}
+
+#ws-v-scrollbar canvas {
+    width: 100% !important;
+}
+
+
+/* --- Уголок между скроллбарами (правый нижний угол) --- */
+
+#ws-scrollbar-corner {
+    width: 20px !important;
+    height: 20px !important;
+    background-color: #c0c0c0 !important;
+}
