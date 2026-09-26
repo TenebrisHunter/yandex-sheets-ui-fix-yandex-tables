@@ -1,4 +1,4 @@
-# yandex-sheets-ui-fix-yandex-tables
+﻿# yandex-sheets-ui-fix-yandex-tables
 
 Код на CSS для исправления размера вкладок таблиц в **Яндекс таблицах**
 
@@ -85,7 +85,6 @@ yandex-sheets-ui-fix/
 ## Лицензия / License
 
 MIT — см. файл `LICENSE`.
-'@ | Out-File -Encoding utf8 README.md
 
 
 ## Авторы / Authors
