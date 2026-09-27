@@ -1,19 +1,16 @@
 ﻿/* ===================================================================
- * СКРОЛЛБАРЫ ЯНДЕКС ТАБЛИЦ — увеличенный размер и свой цвет
+ * СКРОЛЛБАРЫ ЯНДЕКС ТАБЛИЦ — увеличенный размер
  * ===================================================================
- * Меняем только горизонтальный и вертикальный скроллбары + уголок.
+ * ВАЖНО: цвет горизонтального и вертикального скроллбаров изменить
+ * через CSS нельзя — Яндекс рисует его внутри <canvas> (z-index: 100),
+ * который перекрывает контейнер. Ползунок тоже рисуется в JS.
  *
- * ВАЖНО: у всех трёх элементов цвет задан инлайн-стилем
- * (style="background-color: rgb(226, 226, 226)"). Чтобы его перебить,
- * используем:
- *   - !important
- *   - максимально специфичный селектор (html body #id)
- *   - шорткат `background` вместо `background-color`
+ * Что МОЖНО изменить:
+ * - толщину скроллбаров (height / width)
+ * - цвет уголка (#ws-scrollbar-corner) — там нет canvas
  *
- * Настройка:
- * - height / width: толщина полосы (по умолчанию 14px).
- * - background:     цвет полосы в обычном состоянии.
- * - :hover:         цвет полосы при наведении.
+ * Что НЕЛЬЗЯ изменить через CSS:
+ * - цвет полосы горизонтального и вертикального скроллбаров
  * ------------------------------------------------------------------- */
 
 
@@ -21,11 +18,7 @@
 
 html body #ws-h-scrollbar {
     height: 20px !important;
-    background: #c0c0c0 !important;
-}
-
-html body #ws-h-scrollbar:hover {
-    background: #808080 !important;
+    background: #184a46 !important; /* на случай, если Яндекс уберёт canvas */
 }
 
 html body #ws-h-scrollbar canvas {
@@ -37,11 +30,7 @@ html body #ws-h-scrollbar canvas {
 
 html body #ws-v-scrollbar {
     width: 20px !important;
-    background: #c0c0c0 !important;
-}
-
-html body #ws-v-scrollbar:hover {
-    background: #808080 !important;
+    background: #1cc855 !important;
 }
 
 html body #ws-v-scrollbar canvas {
