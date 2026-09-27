@@ -1,24 +1,58 @@
 ﻿/* ===================================================================
- * СКРОЛЛБАРЫ — финальный вариант: серый + hover
- * =================================================================== */
-#ws-h-scrollbar {
+ * СКРОЛЛБАРЫ ЯНДЕКС ТАБЛИЦ — увеличенный размер и свой цвет
+ * ===================================================================
+ * Меняем только горизонтальный и вертикальный скроллбары + уголок.
+ *
+ * ВАЖНО: у всех трёх элементов цвет задан инлайн-стилем
+ * (style="background-color: rgb(226, 226, 226)"). Чтобы его перебить,
+ * используем:
+ *   - !important
+ *   - максимально специфичный селектор (html body #id)
+ *   - шорткат `background` вместо `background-color`
+ *
+ * Настройка:
+ * - height / width: толщина полосы (по умолчанию 14px).
+ * - background:     цвет полосы в обычном состоянии.
+ * - :hover:         цвет полосы при наведении.
+ * ------------------------------------------------------------------- */
+
+
+/* --- ГОРИЗОНТАЛЬНЫЙ СКРОЛЛБАР (нижний) --- */
+
+html body #ws-h-scrollbar {
     height: 20px !important;
-    background-color: #c0c0c0 !important;
+    background: #c0c0c0 !important;
 }
-#ws-h-scrollbar:hover {
-    background-color: #808080 !important;
+
+html body #ws-h-scrollbar:hover {
+    background: #808080 !important;
 }
-#ws-h-scrollbar canvas { height: 100% !important; }
-#ws-v-scrollbar {
+
+html body #ws-h-scrollbar canvas {
+    height: 100% !important;
+}
+
+
+/* --- ВЕРТИКАЛЬНЫЙ СКРОЛЛБАР (правый) --- */
+
+html body #ws-v-scrollbar {
     width: 20px !important;
-    background-color: #c0c0c0 !important;
+    background: #c0c0c0 !important;
 }
-#ws-v-scrollbar:hover {
-    background-color: #808080 !important;
+
+html body #ws-v-scrollbar:hover {
+    background: #808080 !important;
 }
-#ws-v-scrollbar canvas { width: 100% !important; }
-#ws-scrollbar-corner {
+
+html body #ws-v-scrollbar canvas {
+    width: 100% !important;
+}
+
+
+/* --- УГОЛОК между скроллбарами (правый нижний) --- */
+
+html body #ws-scrollbar-corner {
     width: 20px !important;
     height: 20px !important;
-    background-color: #c0c0c0 !important;
+    background: #c0c0c0 !important;
 }
