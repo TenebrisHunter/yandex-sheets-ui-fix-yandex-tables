@@ -85,7 +85,7 @@ yandex-sheets-ui-fix/
 ## Лицензия / License
 
 MIT — см. файл `LICENSE`.
-'@ | Out-File -Encoding utf8 README.md
+
 
 
 ## Авторы / Authors
