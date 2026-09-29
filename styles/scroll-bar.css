@@ -1,24 +1,24 @@
 ﻿/* ===================================================================
- * СКРОЛЛБАРЫ — эксперимент 1: светлый
+ * СКРОЛЛБАРЫ — эксперимент 2: темнее
  * =================================================================== */
 #ws-h-scrollbar {
     height: 20px !important;
-    background-color: #d0d0d0 !important;
+    background-color: #a8a8a8 !important;
 }
 #ws-h-scrollbar:hover {
-    background-color: #a0a0a0 !important;
+    background-color: #606060 !important;
 }
 #ws-h-scrollbar canvas { height: 100% !important; }
 #ws-v-scrollbar {
     width: 20px !important;
-    background-color: #d0d0d0 !important;
+    background-color: #a8a8a8 !important;
 }
 #ws-v-scrollbar:hover {
-    background-color: #a0a0a0 !important;
+    background-color: #606060 !important;
 }
 #ws-v-scrollbar canvas { width: 100% !important; }
 #ws-scrollbar-corner {
     width: 20px !important;
     height: 20px !important;
-    background-color: #d0d0d0 !important;
+    background-color: #a8a8a8 !important;
 }
